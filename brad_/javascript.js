@@ -1,6 +1,6 @@
 console.log("hello")
 console.error(" erro");
-console.table({name:"sam",email:"sam@gmail.com"});
+console.table({sname:"sam",email:"sam@gmail.com"});
 console.warn("warning");
 console.group()
 console.log(100);
@@ -9,10 +9,10 @@ console.error(" erro");
 console.groupEnd;
 
 // variable :let , const ,var( global variable)
-let firstName = "Maurice";
-const lastName = "Dsouza";
-console.log(firstName,lastName);//underdefined//
-const age = 30;
+let lastsName = "Maurice";
+const firstsName = "Dsouza";
+console.log(firstsName,lastsName);//underdefined//
+const age ="23";
 console.log(age)
 
 const ar = [1,2,3,4];
@@ -26,3 +26,14 @@ b=20
 c=10;
 d=23
 console.log(a,b,c,d)
+
+// data type
+const   firstValue = "gesture";
+        lastValue = 100;
+console.log(lastValue,typeof lastValue);
+console.log(firstValue,typeof firstValue);
+
+const sname='maam';
+let  sName=sname;
+
+console.log(sName,sname);
