@@ -52,9 +52,27 @@
 // console.log(output1,typeof output1)
 
 
-/*type of coercion*/
-let x;
-x=2+2+'3';
-x=+'3';
+// /*type of coercion*/
+// let x;
+// x=2+2+'3';
+// x=+'3';
 
-console.log(x,typeof x);
+// console.log(x,typeof x);
+const name1 ="john";
+const age  =20;
+let out = `My name is ${name1} and Im ${age} old.`;
+console.log(out,typeof out);
+
+// tag =name1.__proto__;
+// tag =name1.toUpperCase();
+// tag =name1.charAt(0)
+// tag = out.indexOf('n')
+// tag = out.substring(1,8)
+// tag = out.slice(2,10)
+// tag = out.trim()
+// tag = out.replace('name',"mic")
+tag = out.split(' ')
+
+
+console.log(name1)
+console.log(tag,typeof tag);
