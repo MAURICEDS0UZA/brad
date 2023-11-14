@@ -37,16 +37,24 @@
 // let  sName=sname;
 
 // console.log(sName,sname);
-let value="12";
-console.log(value,typeof value);
-// type conversion into number
+// let value="12";
+// console.log(value,typeof value);
+// // type conversion into number
 
-// value=parseInt(value);
-// value=+(value);
-value=Number(value);
-console.log(value,typeof value);
+// // value=parseInt(value);
+// // value=+(value);
+// value=Number(value);
+// console.log(value,typeof value);
 
-// convert to string
-let value1 = 12
-output1=value1.toString();
-console.log(output1,typeof output1)
+// // convert to string
+// let value1 = 12
+// output1=value1.toString();
+// console.log(output1,typeof output1)
+
+
+/*type of coercion*/
+let x;
+x=2+2+'3';
+x=+'3';
+
+console.log(x,typeof x);
