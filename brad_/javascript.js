@@ -96,12 +96,23 @@
 // console.log(x,typeof x)
 
 // math job
-x=Math.sqrt(4);
-x=Math.round(34.8)
-x=Math.ceil(34.8)
-// x=Math.floor(34.8)
-x=Math.pow(5,2)
-x=Math.min(2,4,5 )
-x=Math.max(2,4,5 )
-x=Math.floor(1+Math.random() *10);
-console.log(x)
+// x=Math.sqrt(4);
+// x=Math.round(34.8)
+// x=Math.ceil(34.8)
+// // x=Math.floor(34.8)
+// x=Math.pow(5,2)
+// x=Math.min(2,4,5 )
+// x=Math.max(2,4,5 )
+// x=Math.floor(1+Math.random() *10);
+// console.log(x)
+
+
+// ?challenge 
+let x =Math.floor(Math.random()*100);
+let y = Math.floor((Math.random()*100)/2)
+sum = x+y;
+mult = x*y;
+div = x/y;
+rem = x%y;
+console.log(x,y,sum,div,rem,mult)
+
