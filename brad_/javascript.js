@@ -87,10 +87,21 @@
 
 //  console.log(o); 
 
-    const num= new Number(50.9880);
+//     const num= new Number(50.9880);
 
-    // x=num.toFixed(2).length;
-    x=num.toPrecision(3);
-    x=Number.MIN_VALUE;
-    x=Number.MAX_VALUE;
-console.log(x,typeof x)
+//     // x=num.toFixed(2).length;
+//     x=num.toPrecision(3);
+//     x=Number.MIN_VALUE;
+//     x=Number.MAX_VALUE;
+// console.log(x,typeof x)
+
+// math job
+x=Math.sqrt(4);
+x=Math.round(34.8)
+x=Math.ceil(34.8)
+// x=Math.floor(34.8)
+x=Math.pow(5,2)
+x=Math.min(2,4,5 )
+x=Math.max(2,4,5 )
+x=Math.floor(1+Math.random() *10);
+console.log(x)
