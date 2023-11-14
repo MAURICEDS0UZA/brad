@@ -78,11 +78,19 @@
 // console.log(tag,typeof tag);
 
 
-/*CHALLENGE FROM COURSE*/
- const myString ="developer";
- o =myString.charAt(0).toUpperCase() + myString.slice(1,9);
+// /*CHALLENGE FROM COURSE*/
+//  const myString ="developer";
+//  o =myString.charAt(0).toUpperCase() + myString.slice(1,9);
 
-//  second option
- o =`${myString[0].toUpperCase()}${myString.substring(1,9)}`;
+// //  second option
+//  o =`${myString[0].toUpperCase()}${myString.substring(1,9)}`;
 
- console.log(o); 
+//  console.log(o); 
+
+    const num= new Number(50.9880);
+
+    // x=num.toFixed(2).length;
+    x=num.toPrecision(3);
+    x=Number.MIN_VALUE;
+    x=Number.MAX_VALUE;
+console.log(x,typeof x)
