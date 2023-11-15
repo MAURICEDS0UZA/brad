@@ -1,6 +1,6 @@
 // console.log("hello")
 // console.error(" erro");
-// console.table({sname:"sam",email:"sam@gmail.com"});
+// console.table([sna]:"sam",email:"sam@gmail.com"});
 // console.warn("warning");
 // console.group()
 // console.log(100);
@@ -60,7 +60,7 @@
 // // console.log(x,typeof x);
 // const name1 ="john";
 // const age  =20;
-// let out = `My name is ${name1} and Im ${age} old.`;
+// let out = `My name is $[nam]} and Im $[age]old.`;
 // console.log(out,typeof out);
 
 // // tag =name1.__proto__;
@@ -83,7 +83,7 @@
 //  o =myString.charAt(0).toUpperCase() + myString.slice(1,9);
 
 // //  second option
-//  o =`${myString[0].toUpperCase()}${myString.substring(1,9)}`;
+//  o =`$[myS]ing[0].toUpperCase()}$[myS]ing.substring(1,9)}`;
 
 //  console.log(o); 
 
@@ -126,11 +126,28 @@
 // let d=e.getMonth()+1;
 // console.log(d,typeof d)
 
-/* array */
-const arr=[1,23,"hek"];
-const fra = new Array(1,23,3)
-let fruits=['apple','grapes','strawberry'];
-fruits[fruits.length]='orange';
-console.log(fruits,typeof fruits);
-console.log(fra,typeof fra)
-console.log(arr,typeof arr)
+// /* array */
+// const arr=[1,23,"hek"];
+// const fra = new Array(1,23,3)
+// let fruits=['apple','grapes','strawberry'];
+// fruits[fruits.length]='orange';
+// console.log(fruits,typeof fruits);
+// console.log(fra,typeof fra)
+// console.log(arr,typeof arr)
+
+//array manipulation
+const dip = [1,2,3,4,5,6,8];
+// dip.push(5);
+// dip.pop()
+
+// dip.unshift(23);dip.shift()
+// dip.reverse()
+// x=dip.splice(1,4)
+x= dip.includes(3)
+x= dip.reverse()
+x=dip.slice(1,4)
+x=dip.splice(1,1)
+
+console.log(dip,x);
+dip.reverse()
+console.log(dip)
