@@ -107,12 +107,23 @@
 // console.log(x)
 
 
-// ?challenge 
-let x =Math.floor(Math.random()*100);
-let y = Math.floor((Math.random()*100)/2)
-sum = x+y;
-mult = x*y;
-div = x/y;
-rem = x%y;
-console.log(x,y,sum,div,rem,mult)
+// // ?challenge 
+// let x =Math.floor(Math.random()*100);
+// let y = Math.floor((Math.random()*100)/2)
+// sum = x+y;
+// mult = x*y;
+// div = x/y;
+// rem = x%y;
+// console.log(x,y,sum,div,rem,mult)
+
+// let d =new Date();
+/* DATE "YYYY-MM-DD"*/
+// DATE YYYY,MM,DD   HERE MM will be 0-11  
+
+// let d= new Date("2023-11-14");
+let e= new Date('2023/10/12');
+// let d=e.getDate();
+let d=e.getMonth()+1;
+console.log(d,typeof d)
+
 
