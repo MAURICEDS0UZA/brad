@@ -120,10 +120,17 @@
 /* DATE "YYYY-MM-DD"*/
 // DATE YYYY,MM,DD   HERE MM will be 0-11  
 
-// let d= new Date("2023-11-14");
-let e= new Date('2023/10/12');
-// let d=e.getDate();
-let d=e.getMonth()+1;
-console.log(d,typeof d)
+// // let d= new Date("2023-11-14");
+// let e= new Date('2023/10/12');
+// // let d=e.getDate();
+// let d=e.getMonth()+1;
+// console.log(d,typeof d)
 
-
+/* array */
+const arr=[1,23,"hek"];
+const fra = new Array(1,23,3)
+let fruits=['apple','grapes','strawberry'];
+fruits[fruits.length]='orange';
+console.log(fruits,typeof fruits);
+console.log(fra,typeof fra)
+console.log(arr,typeof arr)
