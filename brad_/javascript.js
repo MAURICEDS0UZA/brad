@@ -135,19 +135,36 @@
 // console.log(fra,typeof fra)
 // console.log(arr,typeof arr)
 
-//array manipulation
-const dip = [1,2,3,4,5,6,8];
-// dip.push(5);
-// dip.pop()
+// //array manipulation
+// const dip = [1,2,3,4,5,6,8];
+// // dip.push(5);
+// // dip.pop()
 
-// dip.unshift(23);dip.shift()
-// dip.reverse()
-// x=dip.splice(1,4)
-// x= dip.includes(3)
-// x= dip.reverse()
-// x=dip.slice(1,4)
-x=dip.slice(1,3)
+// // dip.unshift(23);dip.shift()
+// // dip.reverse()
+// // x=dip.splice(1,4)
+// // x= dip.includes(3)
+// // x= dip.reverse()
+// // x=dip.slice(1,4)
+// x=dip.slice(1,3)
 
-console.log(dip,x);
-// dip.reverse()
-console.log(dip)
+// console.log(dip,x);
+// // dip.reverse()
+// console.log(dip)
+
+//nesting of array//
+const num = [1,2,3,4,5]
+const mun = [6,7,8,9,10];
+
+//  num.push(mun)
+//  let x= num[5][2];
+
+// concat
+////x=mun.concat(num)
+//spread operator//
+// const x = [...num,mun]
+// const x = Array.isArray(num)
+const x = Array.from('umsadsf')
+
+
+console.log(x,num)
