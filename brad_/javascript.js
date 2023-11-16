@@ -143,11 +143,11 @@ const dip = [1,2,3,4,5,6,8];
 // dip.unshift(23);dip.shift()
 // dip.reverse()
 // x=dip.splice(1,4)
-x= dip.includes(3)
-x= dip.reverse()
-x=dip.slice(1,4)
-x=dip.splice(1,1)
+// x= dip.includes(3)
+// x= dip.reverse()
+// x=dip.slice(1,4)
+x=dip.slice(1,3)
 
 console.log(dip,x);
-dip.reverse()
+// dip.reverse()
 console.log(dip)
