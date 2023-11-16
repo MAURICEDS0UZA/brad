@@ -152,19 +152,41 @@
 // // dip.reverse()
 // console.log(dip)
 
-//nesting of array//
-const num = [1,2,3,4,5]
-const mun = [6,7,8,9,10];
+// //nesting of array//
+// const num = [1,2,3,4,5]
+// const mun = [6,7,8,9,10];
 
-//  num.push(mun)
-//  let x= num[5][2];
+// //  num.push(mun)
+// //  let x= num[5][2];
 
-// concat
-////x=mun.concat(num)
-//spread operator//
-// const x = [...num,mun]
-// const x = Array.isArray(num)
-const x = Array.from('umsadsf')
+// // concat
+// ////x=mun.concat(num)
+// //spread operator//
+// // const x = [...num,mun]
+// // const x = Array.isArray(num)
+// const x = Array.from('umsadsf')
 
 
-console.log(x,num)
+// console.log(x,num)
+
+
+//challenge for  array
+const asd =[1,2,3,4,5];
+asd.push(6)
+asd.unshift(0);
+asd.reverse()
+
+console.log(asd)
+
+// //challenge 2
+const arr1 = [1,2,3,4,5];
+const arr2 = [5,6,7,8,9];
+// const arr3=[...arr1,...arr2];
+// // x=arr3.indexOf(5);
+// x=arr3.splice(4,1)
+// console.log(arr3,x)
+/*solution 2*/
+
+const arr3=arr1.slice(0,4).concat(arr2)
+
+console.log(arr3)
