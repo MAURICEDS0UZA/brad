@@ -170,23 +170,27 @@
 // console.log(x,num)
 
 
-//challenge for  array
-const asd =[1,2,3,4,5];
-asd.push(6)
-asd.unshift(0);
-asd.reverse()
 
-console.log(asd)
-
-// //challenge 2
-const arr1 = [1,2,3,4,5];
-const arr2 = [5,6,7,8,9];
-// const arr3=[...arr1,...arr2];
-// // x=arr3.indexOf(5);
-// x=arr3.splice(4,1)
-// console.log(arr3,x)
-/*solution 2*/
-
-const arr3=arr1.slice(0,4).concat(arr2)
-
-console.log(arr3)
+const person ={
+    name1:'maurice',
+    age:24,
+    ar:{
+        city:"bangalore",
+        dist:'urban'
+    },
+    sa:[1,23,34,45]
+};
+console.log(person.name1)
+console.log(person);
+console.log(person.age)
+console.log(person.ar)
+console.log(person.ar['city']);
+console.log(person.ar.dist);
+console.log(person.sa[0]);
+console.log(person.sa[2]);
+console.log(person.sa[1]);
+console.log(person.sa[3]);
+console.log(person.sa[1]);
+delete  person.age;
+person.add = "wewhe"
+console.log(person);
