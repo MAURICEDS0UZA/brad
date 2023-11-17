@@ -228,10 +228,52 @@
 
 // json (javascript object notation)
 
-const x={ name:'may',age:'23'};
-console.log(x)
-// convert to json
-const y =JSON.stringify(x);
-console.log(y)
-const z=JSON.parse(y)
-console.log(z)
+// const x={ name:'may',age:'23'};
+// console.log(x)
+// // convert to json
+// const y =JSON.stringify(x);
+// console.log(y)
+// const z=JSON.parse(y)
+// console.log(z)
+
+
+const library=[
+   {title:"sd",
+   author:"ad",
+   status:  
+   {
+    own:true,
+    reading:false,
+    read:false
+} },
+        {title:"we",
+        author:"wd",
+        status:{
+            own:true,
+            reading:false,
+            read:false
+        } },
+    {title:"red",
+    author:"ard",
+    status:{
+        own:true,
+        reading:false,
+        read:false } 
+    }
+];
+
+
+// Step2
+library[0].status.read='true';
+library[1].status.read='true';
+library[2].status.read='true';
+console.log(library)
+ const { title:book,author:writer} =library[0];
+console.log(book,writer);
+console.log(library)
+
+
+// step3
+const injson = JSON.stringify(library);
+console.log(injson)
+
