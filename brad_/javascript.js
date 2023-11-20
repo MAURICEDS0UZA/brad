@@ -237,43 +237,75 @@
 // console.log(z)
 
 
-const library=[
-   {title:"sd",
-   author:"ad",
-   status:  
-   {
-    own:true,
-    reading:false,
-    read:false
-} },
-        {title:"we",
-        author:"wd",
-        status:{
-            own:true,
-            reading:false,
-            read:false
-        } },
-    {title:"red",
-    author:"ard",
-    status:{
-        own:true,
-        reading:false,
-        read:false } 
-    }
-];
+// const library=[
+//    {title:"sd",
+//    author:"ad",
+//    status:  
+//    {
+//     own:true,
+//     reading:false,
+//     read:false
+// } },
+//         {title:"we",
+//         author:"wd",
+//         status:{
+//             own:true,
+//             reading:false,
+//             read:false
+//         } },
+//     {title:"red",
+//     author:"ard",
+//     status:{
+//         own:true,
+// //         reading:false,
+// //         read:false } 
+// //     }
+// // ];
 
 
-// Step2
-library[0].status.read='true';
-library[1].status.read='true';
-library[2].status.read='true';
-console.log(library)
- const { title:book,author:writer} =library[0];
-console.log(book,writer);
-console.log(library)
+// // // Step2
+// // library[0].status.read='true';
+// // library[1].status.read='true';
+// // library[2].status.read='true';
+// // console.log(library)
+// //  const { title:book,author:writer} =library[0];
+// // console.log(book,writer);
+// // console.log(library)
 
 
-// step3
-const injson = JSON.stringify(library);
-console.log(injson)
+// // // step3
+// // const injson = JSON.stringify(library);
+// // console.log(injson)
 
+// // function
+// function na(num1, num2) {
+//     console.log(num1 + num2)
+// }
+// na(10, 3)
+
+// //default params
+// function dsa(su = 'marice') {
+//     return `my mane is ${su}`
+// }
+// console.log(dsa())
+
+
+// //object as params
+// let su = {
+//     name: 'maurice', id: '2320968'
+// }
+// function dsa(su) {
+//     return `my mane is ${su.name, su.id}`
+// }
+// console.log(dsa(su))
+
+//array as params
+
+function ds(...arr) {
+    let ran = Math.floor(Math.random() * arr.length);
+    const iten = arr[ran];
+
+    console.log(iten)
+}
+
+ds(1, 2, 3, 4, 56, 6, 7);
