@@ -416,10 +416,20 @@
 //     };
 // }
 
-// console.log(minMax([1, 2, 3, 45, 5]));
+// // console.log(minMax([1, 2, 3, 45, 5]));
 
-((len, wid) => {
-    console.log(len * wid);
-    console.log(len)
-    console.log(len)
-})(window.innerWidth, window.innerHeight);
+// ((len, wid) => {
+//     console.log(len * wid);
+//     console.log(len)
+//     console.log(len)
+// })(window.innerWidth, window.innerHeight);
+
+const x = 100;
+const y = 230;
+function sum(x, y) {
+    const sum = x + y;
+    return console.log(sum);
+
+}
+const a = sum(x, y)
+const b = sum(10, 23)
