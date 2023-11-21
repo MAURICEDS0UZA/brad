@@ -85,7 +85,7 @@
 // // // // // //  second option
 // // // // //  o =`$[myS]ing[0].toUpperCase()}$[myS]ing.substring(1,9)}`;
 
-// // // // //  console.log(o); 
+// // // // //  console.log(o);
 
 // // // // //     const num= new Number(50.9880);
 
@@ -107,7 +107,7 @@
 // // // // // console.log(x)
 
 
-// // // // // // ?challenge 
+// // // // // // ?challenge
 // // // // // let x =Math.floor(Math.random()*100);
 // // // // // let y = Math.floor((Math.random()*100)/2)
 // // // // // sum = x+y;
@@ -118,7 +118,7 @@
 
 // // // // // let d =new Date();
 // // // // /* DATE "YYYY-MM-DD"*/
-// // // // // DATE YYYY,MM,DD   HERE MM will be 0-11  
+// // // // // DATE YYYY,MM,DD   HERE MM will be 0-11
 
 // // // // // // let d= new Date("2023-11-14");
 // // // // // let e= new Date('2023/10/12');
@@ -240,7 +240,7 @@
 // // const library=[
 // //    {title:"sd",
 // //    author:"ad",
-// //    status:  
+// //    status:
 // //    {
 // //     own:true,
 // //     reading:false,
@@ -258,7 +258,7 @@
 // //     status:{
 // //         own:true,
 // // //         reading:false,
-// // //         read:false } 
+// // //         read:false }
 // // //     }
 // // // ];
 
@@ -364,40 +364,62 @@
 // };
 
 
-//arrow function 
+// //arrow function
 
-function add(a, b) {
-    return a + b
-}
+// function add(a, b) {
+//     return a + b
+// }
 
-console.log(add(12, 13))
+// console.log(add(12, 13))
 
-const sub = function (a, b) {
-    return a + b;
-};
-
-
-
-console.log(sub(12, 19));
-const doun = (d, s) => {
-    return d + s;
-};
-console.log(doun(12, 23));
-
-//implict 
-//const fund = (ru, fu) => ru - fu;
-// console.log(fund(4, 8))
+// const sub = function (a, b) {
+//     return a + b;
+// };
 
 
-const fund = () => ({ name: 'mau', id: 12 });
-console.log();
 
-// const num = [1, 2, 3, 4, 5];
-// num.forEach(function (n) {
-//     console.log(n);
-// });
- arrow function
-    num.forEach(element => {
-        console.log(element)
+// console.log(sub(12, 19));
+// const doun = (d, s) => {
+//     return d + s;
+// };
+// console.log(doun(12, 23));
 
-    });
+// //implict
+// //const fund = (ru, fu) => ru - fu;
+// // console.log(fund(4, 8))
+
+
+// const fund = () => ({ name: 'mau', id: 12 });
+// console.log();
+
+// // const num = [1, 2, 3, 4, 5];
+// // num.forEach(function (n) {
+// //     console.log(n);
+// // });
+//  arrow function
+//     num.forEach(element => {
+//         console.log(element)
+
+//     });
+
+// // challeges degree
+// const getcelecius = (f) => (f - 32) * (5 / 9)
+// // console.log(`${getcelecius(prompt('enter value'))} \xB0C`);
+
+// // challenge 2
+// function minMax(arr) {
+//     const ad = Math.min(...arr);
+//     const e = Math.max(...arr);
+//     return {
+//         min: ad,
+//         max: e
+//     };
+// }
+
+// console.log(minMax([1, 2, 3, 45, 5]));
+
+((len, wid) => {
+    console.log(len * wid);
+    console.log(len)
+    console.log(len)
+})(window.innerWidth, window.innerHeight);
