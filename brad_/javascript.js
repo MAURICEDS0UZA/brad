@@ -350,15 +350,54 @@
 // func();
 
 
-// function expression
+// // function expression
 
-const r = function (nam) {
-    return nam;
+// const r = function (nam) {
+//     return nam;
+// };
+
+// console.log(r(120))
+// console.log(rs(10))
+
+// function rs(nam) {
+//     return nam;
+// };
+
+
+//arrow function 
+
+function add(a, b) {
+    return a + b
+}
+
+console.log(add(12, 13))
+
+const sub = function (a, b) {
+    return a + b;
 };
 
-console.log(r(120))
-console.log(rs(10))
 
-function rs(nam) {
-    return nam;
+
+console.log(sub(12, 19));
+const doun = (d, s) => {
+    return d + s;
 };
+console.log(doun(12, 23));
+
+//implict 
+//const fund = (ru, fu) => ru - fu;
+// console.log(fund(4, 8))
+
+
+const fund = () => ({ name: 'mau', id: 12 });
+console.log();
+
+// const num = [1, 2, 3, 4, 5];
+// num.forEach(function (n) {
+//     console.log(n);
+// });
+ arrow function
+    num.forEach(element => {
+        console.log(element)
+
+    });
