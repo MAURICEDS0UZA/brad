@@ -310,41 +310,55 @@
 
 // ds(1, 2, 3, 4, 56, 6, 7);
 
-// global scope
-const bo = 100;
-function fg() {
-    const x = 23;
-    console.log(bo + x)
-}
-fg()
+// // global scope
+// const bo = 100;
+// function fg() {
+//     const x = 23;
+//     console.log(bo + x)
+// }
+// fg()
 
-// functional scope
-function g() {
-    const x = 23;
-    console.log(bo + x)
-}
-g()
+// // functional scope
+// function g() {
+//     const x = 23;
+//     console.log(bo + x)
+// }
+// g()
 
-// variable shadowing
-let er = 100;
-function f() {
-    const x = 23;
-    let er = 10;
-    console.log(er + x)
-}
-f()
+// // variable shadowing
+// let er = 100;
+// function f() {
+//     const x = 23;
+//     let er = 10;
+//     console.log(er + x)
+// }
+// f()
 
-// illegal shadowing
+// // illegal shadowing
 
-function func() {
-    var a = 'Geeks';
-    let b = 'Geeks';
+// function func() {
+//     var a = 'Geeks';
+//     let b = 'Geeks';
 
-    if (true) {
-        let a = 'GeeksforGeeks'; // Legal Shadowing
-        let b = 'Geeks'; // Illegal Shadowing
-        console.log(a); // It will print 'GeeksforGeeks'
-        console.log(b); // It will print error
-    }
-}
-func();
+//     if (true) {
+//         let a = 'GeeksforGeeks'; // Legal Shadowing
+//         let b = 'Geeks'; // Illegal Shadowing
+//         console.log(a); // It will print 'GeeksforGeeks'
+//         console.log(b); // It will print error
+//     }
+// }
+// func();
+
+
+// function expression
+
+const r = function (nam) {
+    return nam;
+};
+
+console.log(r(120))
+console.log(rs(10))
+
+function rs(nam) {
+    return nam;
+};
