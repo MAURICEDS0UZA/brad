@@ -424,12 +424,24 @@
 //     console.log(len)
 // })(window.innerWidth, window.innerHeight);
 
-const x = 100;
-const y = 230;
-function sum(x, y) {
-    const sum = x + y;
-    return console.log(sum);
+// const x = 100;
+// const y = 230;
+// function sum(x, y) {
+//     const sum = x + y;
+//     return console.log(sum);
 
+// }
+// const a = sum(x, y)
+// const b = sum(10, 23)
+
+const d = new Date(2023, 10, 22, 8, 0, 0)
+const month = d.getMonth()
+switch (month) {
+    case 1: console.log("jan");
+        break;
+    case 2: console.log("feb");
+        break;
+    case 1: console.log("march");
+        break;
+    default: console.log("not jan , feb || march");
 }
-const a = sum(x, y)
-const b = sum(10, 23)
