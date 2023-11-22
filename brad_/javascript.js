@@ -489,3 +489,5 @@
 // //nullish
 // const c = 20 ?? null;
 // console.log(c)
+let age = 2;
+age > 18 && console.log('ican vote')
