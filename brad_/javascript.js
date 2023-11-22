@@ -446,34 +446,46 @@
 //     default: console.log("not jan , feb || march");
 // }
 
-function cal(a, b, operator) {
-    switch (operator) {
-        case 'add': const sum = a + b;
-            result = console.log(sum);
+// function cal(a, b, operator) {
+//     switch (operator) {
+//         case 'add': const sum = a + b;
+//             result = console.log(sum);
 
-            break;
-        case 'sub': const sub = a - b;
-            result = console.log(sub);
+//             break;
+//         case 'sub': const sub = a - b;
+//             result = console.log(sub);
 
-            break;
-        case 'mult': const mult = a * b;
-            result = console.log(mult);
+//             break;
+//         case 'mult': const mult = a * b;
+//             result = console.log(mult);
 
-            break;
-        case 'diva': const divs = a / b;
-            result = console.log(divs);
+//             break;
+//         case 'diva': const divs = a / b;
+//             result = console.log(divs);
 
-            break;
+//             break;
 
-        default: result = console.log('cant perform')
-            break;
-    }
+//         default: result = console.log('cant perform')
+//             break;
+//     }
 
-}
-// const ops = prompt('3')
-// const a = prompt('1')
-// const b = prompt('2')
+// }
+// // const ops = prompt('3')
+// // const a = prompt('1')
+// // const b = prompt('2')
 
-// console.log(typeof ops)
+// // console.log(typeof ops)
 
-cal(1, 4, "diva")
+// cal(1, 4, "diva")
+
+// const p = 3
+// if (p) {
+//     console.log("true")
+// } else {
+//     console.log("fasle")
+
+// }
+
+// //nullish
+// const c = 20 ?? null;
+// console.log(c)
