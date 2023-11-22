@@ -285,7 +285,7 @@
 
 // // //default params
 // // function dsa(su = 'marice') {
-// //     return `my mane is ${su}`
+// //     result= `my mane is ${su}`
 // // }
 // // console.log(dsa())
 
@@ -295,7 +295,7 @@
 // //     name: 'maurice', id: '2320968'
 // // }
 // // function dsa(su) {
-// //     return `my mane is ${su.name, su.id}`
+// //     result= `my mane is ${su.name, su.id}`
 // // }
 // // console.log(dsa(su))
 
@@ -353,34 +353,34 @@
 // // function expression
 
 // const r = function (nam) {
-//     return nam;
+//     result= nam;
 // };
 
 // console.log(r(120))
 // console.log(rs(10))
 
 // function rs(nam) {
-//     return nam;
+//     result= nam;
 // };
 
 
 // //arrow function
 
 // function add(a, b) {
-//     return a + b
+//     result= a + b
 // }
 
 // console.log(add(12, 13))
 
 // const sub = function (a, b) {
-//     return a + b;
+//     result= a + b;
 // };
 
 
 
 // console.log(sub(12, 19));
 // const doun = (d, s) => {
-//     return d + s;
+//     result= d + s;
 // };
 // console.log(doun(12, 23));
 
@@ -410,7 +410,7 @@
 // function minMax(arr) {
 //     const ad = Math.min(...arr);
 //     const e = Math.max(...arr);
-//     return {
+//     result= {
 //         min: ad,
 //         max: e
 //     };
@@ -428,20 +428,52 @@
 // const y = 230;
 // function sum(x, y) {
 //     const sum = x + y;
-//     return console.log(sum);
+//     result= console.log(sum);
 
 // }
 // const a = sum(x, y)
 // const b = sum(10, 23)
 
-const d = new Date(2023, 10, 22, 8, 0, 0)
-const month = d.getMonth()
-switch (month) {
-    case 1: console.log("jan");
-        break;
-    case 2: console.log("feb");
-        break;
-    case 1: console.log("march");
-        break;
-    default: console.log("not jan , feb || march");
+// const d = new Date(2023, 10, 22, 8, 0, 0)
+// const month = d.getMonth()
+// switch (month) {
+//     case 1: console.log("jan");
+//         break;
+//     case 2: console.log("feb");
+//         break;
+//     case 1: console.log("march");
+//         break;
+//     default: console.log("not jan , feb || march");
+// }
+
+function cal(a, b, operator) {
+    switch (operator) {
+        case 'add': const sum = a + b;
+            result = console.log(sum);
+
+            break;
+        case 'sub': const sub = a - b;
+            result = console.log(sub);
+
+            break;
+        case 'mult': const mult = a * b;
+            result = console.log(mult);
+
+            break;
+        case 'diva': const divs = a / b;
+            result = console.log(divs);
+
+            break;
+
+        default: result = console.log('cant perform')
+            break;
+    }
+
 }
+// const ops = prompt('3')
+// const a = prompt('1')
+// const b = prompt('2')
+
+// console.log(typeof ops)
+
+cal(1, 4, "diva")
