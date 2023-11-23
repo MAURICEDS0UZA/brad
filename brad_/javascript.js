@@ -512,23 +512,46 @@
 // }
 
 
-//break 
-for (let i = 0; i <= 10; i++) {
-    if (i === 5) {
-        console.log(`NUmber is 5.okay!`)
-        break
-    } else {
-        console.log(`number is${i} `)
+// //break
+// for (let i = 0; i <= 10; i++) {
+//     if (i === 5) {
+//         console.log(`NUmber is 5.okay!`)
+//         break
+//     } else {
+//         console.log(`number is${i} `)
 
-    }
-}
-//continue
-for (let i = 0; i <= 10; i++) {
-    if (i === 5) {
-        console.log(`NUmber is 5.okay!`)
-        continue;
-    } else {
-        console.log(`number is${i} `)
+//     }
+// }
+// //continue
+// for (let i = 0; i <= 10; i++) {
+//     if (i === 5) {
+//         console.log(`NUmber is 5.okay!`)
+//         continue;
+//     } else {
+//         console.log(`number is${i} `)
 
+//     }
+// }
+
+// while loop
+
+// let i = 0;
+// while (i <= 10) {
+//     console.log(i);
+//     i++;
+
+// }
+
+
+
+// nesting while loop
+let i = 1;
+while (i <= 5) {
+    console.log(`tables of ${i}`);
+    let j = 1;
+    while (j <= 5) {
+        console.log(` ${i} * ${j} = ${i * j}`);
+        j++;
     }
+    i++;
 }
