@@ -489,5 +489,24 @@
 // //nullish
 // const c = 20 ?? null;
 // console.log(c)
-let age = 2;
-age > 18 && console.log('ican vote')
+// let age = 2;
+// age > 18 && console.log('ican vote')
+
+// for (let i = 0; i <= 10; i++) {
+//     console.log(i)
+// }
+
+// for (let i = 1; i <= 10; i++) {
+//     console.log(`tables of ${i}`)
+//     for (let j = 1; j <= 10; j++) {
+//         console.log(`${i}*${j}=${i * j}`)
+//     }
+
+// }
+
+
+// loop through an array
+const arer = ['nas', 'sd', 'wer'];
+for (let i = 0; i < arer.length; i++) {
+    console.log(arer[i]);
+}
