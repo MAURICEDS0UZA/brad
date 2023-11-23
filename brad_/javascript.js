@@ -505,8 +505,30 @@
 // }
 
 
-// loop through an array
-const arer = ['nas', 'sd', 'wer'];
-for (let i = 0; i < arer.length; i++) {
-    console.log(arer[i]);
+// // loop through an array
+// const arer = ['nas', 'sd', 'wer'];
+// for (let i = 0; i < arer.length; i++) {
+//     console.log(arer[i]);
+// }
+
+
+//break 
+for (let i = 0; i <= 10; i++) {
+    if (i === 5) {
+        console.log(`NUmber is 5.okay!`)
+        break
+    } else {
+        console.log(`number is${i} `)
+
+    }
+}
+//continue
+for (let i = 0; i <= 10; i++) {
+    if (i === 5) {
+        console.log(`NUmber is 5.okay!`)
+        continue;
+    } else {
+        console.log(`number is${i} `)
+
+    }
 }
