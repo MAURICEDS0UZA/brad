@@ -544,14 +544,45 @@
 
 
 
-// nesting while loop
+// // nesting while loop
+// let i = 1;
+// while (i <= 5) {
+//     console.log(`tables of ${i}`);
+//     let j = 1;
+//     while (j <= 5) {
+//         console.log(` ${i} * ${j} = ${i * j}`);
+//         j++;
+//     }
+//     i++;
+// }
+
+/*  challenge fizzbuzz */
+/*
+for (let i = 1; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log(`fizz buzz ${i}`);
+    }
+    else if (i % 3 === 0) {
+        console.log(`fizz  ${i}`);
+    } else if (i % 5 === 0) {
+        console.log(`buzz  ${i}`);
+    } else {
+        console.log(`${i}`);
+    }
+}
+*/
 let i = 1;
-while (i <= 5) {
-    console.log(`tables of ${i}`);
-    let j = 1;
-    while (j <= 5) {
-        console.log(` ${i} * ${j} = ${i * j}`);
-        j++;
+while (i <= 100) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log(`fizz buzz ${i}`);
+    }
+    else if (i % 3 === 0) {
+        console.log(`fizz  ${i}`);
+    } else if (i % 5 === 0) {
+        console.log(`buzz  ${i}`);
+    } else {
+        console.log(`${i}`);
     }
     i++;
 }
+
