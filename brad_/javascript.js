@@ -571,18 +571,37 @@ for (let i = 1; i <= 100; i++) {
     }
 }
 */
-let i = 1;
-while (i <= 100) {
-    if (i % 3 === 0 && i % 5 === 0) {
-        console.log(`fizz buzz ${i}`);
-    }
-    else if (i % 3 === 0) {
-        console.log(`fizz  ${i}`);
-    } else if (i % 5 === 0) {
-        console.log(`buzz  ${i}`);
-    } else {
-        console.log(`${i}`);
-    }
-    i++;
-}
+// let i = 1;
+// while (i <= 100) {
+//     if (i % 3 === 0 && i % 5 === 0) {
+//         console.log(`fizz buzz ${i}`);
+//     }
+//     else if (i % 3 === 0) {
+//         console.log(`fizz  ${i}`);
+//     } else if (i % 5 === 0) {
+//         console.log(`buzz  ${i}`);
+//     } else {
+//         console.log(`${i}`);
+//     }
+//     i++;
+// }
 
+// for of loop
+// let arr = [1, 23, 3, 4, 5]
+// for (let basn of arr) {
+//     console.log(basn)
+// }
+
+// let arr = { 1, 23, 3, 4, 5}
+// for (let basn of arr) {
+//     console.log(basn)
+// }
+
+/* loop over map
+*/
+const maoi = new Map();
+maoi.set(name, "maurice");
+maoi.set("naage", 323);
+for (let [key, val] of maoi) {
+    console.log(key, val)
+}
