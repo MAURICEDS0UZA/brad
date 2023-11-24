@@ -638,5 +638,66 @@ for (let i = 1; i <= 100; i++) {
 // social.forEach(items => console.log(items))
 
 /* array.fillter*/
-const number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
-const evennum = console.log(number.filter(item => item % 2 === 0));
+// const number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
+// const evennum = console.log(number.filter(item => item % 2 === 0));
+
+
+// const companies = [
+//     { name: 'Company One', category: 'Finance', start: 1981, end: 2004 },
+//     { name: 'Company Two', category: 'Retail', start: 1992, end: 2008 },
+//     { name: 'Company Three', category: 'Auto', start: 1999, end: 2007 },
+//     { name: 'Company Four', category: 'Retail', start: 1989, end: 2010 },
+//     { name: 'Company Five', category: 'Technology', start: 2009, end: 2014 },
+//     { name: 'Company Six', category: 'Finance', start: 1987, end: 2010 },
+//     { name: 'Company Seven', category: 'Auto', start: 1986, end: 1996 },
+//     { name: 'Company Eight', category: 'Technology', start: 2011, end: 2016 },
+//     { name: 'Company Nine', category: 'Retail', start: 1981, end: 1989 },
+// ];
+
+// const x = companies.filter((company) => company.category = "retail")
+// console.log(x)
+// // const y = companies.filter((company) => company.start >= 1980 && company.end <= 1990);
+// const y = companies.filter((company) => company.start - company.end >= -10);
+// console.log(y)
+
+
+// /*array map*/
+// const companies = [
+//     { name: 'Company One', category: 'Finance', start: 1981, end: 2004 },
+//     { name: 'Company Two', category: 'Retail', start: 1992, end: 2008 },
+//     { name: 'Company Three', category: 'Auto', start: 1999, end: 2007 },
+//     { name: 'Company Four', category: 'Retail', start: 1989, end: 2010 },
+//     { name: 'Company Five', category: 'Technology', start: 2009, end: 2014 },
+//     { name: 'Company Six', category: 'Finance', start: 1987, end: 2010 },
+//     { name: 'Company Seven', category: 'Auto', start: 1986, end: 1996 },
+//     { name: 'Company Eight', category: 'Technology', start: 2011, end: 2016 },
+//     { name: 'Company Nine', category: 'Retail', start: 1981, end: 1989 },
+// ];
+
+// create an array//
+// const companyNames = companies.map((items) => items.name);
+// console.log(companyNames)
+//
+
+// const nweas = companies.map(
+//     (compj) => {
+//         return {
+//             name: compj.name,
+//             key: compj.category,
+//         }
+//     }
+// )
+// console.log(nweas)
+
+// const arre = companies.map((items) => {
+//     return {
+//         name: items.name,
+//         lenght: items.end - items.start,
+//     }
+// })
+// console.log(arre.filter((items) => items.lenght > 10))
+
+const number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let c = 0;
+const sd = number.map((items) => c += items);
+console.log(sd.filter((items) => items % 2 === 0).reduce((pr, cr) => pr + cr, 0))
