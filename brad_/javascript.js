@@ -599,9 +599,24 @@ for (let i = 1; i <= 100; i++) {
 
 /* loop over map
 */
-const maoi = new Map();
-maoi.set(name, "maurice");
-maoi.set("naage", 323);
-for (let [key, val] of maoi) {
-    console.log(key, val)
-}
+// const maoi = new Map();
+// maoi.set(name, "maurice");
+// maoi.set("naage", 323);
+// for (let [key, val] of maoi) {
+//     console.log(key, val)
+// }
+
+
+/* for in loop
+*/
+// const onbg = {
+//     nmae: 'mas',
+//     age: 23,
+//     addr: "bangalore"
+// }
+
+// for (const key in onbg) {
+//     console.log(key)
+//     console.log(onbg[key])
+
+// }
