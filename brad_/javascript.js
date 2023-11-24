@@ -620,3 +620,19 @@ for (let i = 1; i <= 100; i++) {
 //     console.log(onbg[key])
 
 // }
+
+
+// loop over oarray using array for each
+
+// const social = ['twitter', 'linkden', 'insta', 'facebook'];
+
+// social.forEach(item => {
+//     console.log(item)
+
+// });
+
+/*loop over oarray using array for each*/
+
+const social = { name: 'twitter' }, { place: 'linkden' }, { thing: 'insta' }, { cre: 'facebook' };
+console.log(social)
+social.forEach(items => console.log(items))
