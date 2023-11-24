@@ -619,20 +619,24 @@ for (let i = 1; i <= 100; i++) {
 //     console.log(key)
 //     console.log(onbg[key])
 
-// }
+// // }
 
 
-// loop over oarray using array for each
+// // loop over oarray using array for each
 
-// const social = ['twitter', 'linkden', 'insta', 'facebook'];
+// // const social = ['twitter', 'linkden', 'insta', 'facebook'];
 
-// social.forEach(item => {
-//     console.log(item)
+// // social.forEach(item => {
+// //     console.log(item)
 
-// });
+// // });
 
-/*loop over oarray using array for each*/
+// /*loop over oarray using array for each*/
 
-const social = { name: 'twitter' }, { place: 'linkden' }, { thing: 'insta' }, { cre: 'facebook' };
-console.log(social)
-social.forEach(items => console.log(items))
+// const social = { name: 'twitter' }, { place: 'linkden' }, { thing: 'insta' }, { cre: 'facebook' };
+// console.log(social)
+// social.forEach(items => console.log(items))
+
+/* array.fillter*/
+const number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
+const evennum = console.log(number.filter(item => item % 2 === 0));
