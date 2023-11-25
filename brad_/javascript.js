@@ -762,10 +762,10 @@ for (let i = 1; i <= 100; i++) {
 //     .reduce((prev, curr) => prev + curr, 0);
 // console.log(addpostive);
 
-// Challenge 3
-const words = ['coder', 'programmer', 'developer'];
+// // Challenge 3
+// const words = ['coder', 'programmer', 'developer'];
 
-const ere = words.map((items) => {
-    return items[0].toUpperCase() + items.slice(1, items.length)
-})
-console.log(ere)
+// const ere = words.map((items) => {
+//     return items[0].toUpperCase() + items.slice(1, items.length)
+// })
+// console.log(ere)
