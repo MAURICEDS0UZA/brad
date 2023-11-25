@@ -697,7 +697,75 @@ for (let i = 1; i <= 100; i++) {
 // })
 // console.log(arre.filter((items) => items.lenght > 10))
 
-const number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let c = 0;
-const sd = number.map((items) => c += items);
-console.log(sd.filter((items) => items % 2 === 0).reduce((pr, cr) => pr + cr, 0))
+// const number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let c = 0;
+// const sd = number.map((items) => c += items);
+// console.log(sd.filter((items) => items % 2 === 0).reduce((pr, cr) => pr + cr, 0))
+
+
+// // Challenge 1
+// const people = [
+//     {
+//         firstName: 'John',
+//         lastName: 'Doe',
+//         email: 'john@gmail.com',
+//         phone: '111-111-1111',
+//         age: 30,
+//     },
+//     {
+//         firstName: 'Jane',
+//         lastName: 'Poe',
+//         email: 'jane@gmail.com',
+//         phone: '222-222-2222',
+//         age: 25,
+//     },
+//     {
+//         firstName: 'Bob',
+//         lastName: 'Foe',
+//         email: 'bob@gmail.com',
+//         phone: '333-333-3333',
+//         age: 45,
+//     },
+//     {
+//         firstName: 'Sara',
+//         lastName: 'Soe',
+//         email: 'Sara@gmail.com',
+//         phone: '444-444-4444',
+//         age: 19,
+//     },
+//     {
+//         firstName: 'Jose',
+//         lastName: 'Koe',
+//         email: 'jose@gmail.com',
+//         phone: '555-555-5555',
+//         age: 23,
+//     },
+// ];
+
+// const was = people
+//     .filter((items) => items.age >= 20)
+//     .map((person) => ({
+//         name: `${person.firstName} ${person.lastName}`,
+//         email: person.email,
+//     }))
+// // const ad = [];
+// // const was = people.forEach((person) => (ad.push({
+// //     name1: `${person.firstName} ${person.lastName}`,
+// //     email: person.email,
+// // })))
+
+// console.log(was);
+
+// // Challenge 2
+// const numbers = [2, -30, 50, 20, -12, -9, 7];
+// const addpostive = numbers.filter((num) => num >= 0)
+//     .reduce((prev, curr) => prev + curr, 0);
+// console.log(addpostive);
+
+// Challenge 3
+const words = ['coder', 'programmer', 'developer'];
+
+const ere = words.map((items) => {
+    return items[0].toUpperCase() + items.slice(1, items.length)
+})
+console.log(ere)
