@@ -26,6 +26,9 @@ header {
 header h1 {
     font-weight: 300;
     margin-left: 10px;
+    background: linear-gradient(#e80a0a, rgb(232, 171, 171), rgb(27, 124, 27));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .container {
@@ -60,7 +63,7 @@ header h1 {
 /* Buttons */
 .btn {
     background-color: #333;
-    color: #fff;
+    color: rgb(249, 248, 248);
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
@@ -117,6 +120,7 @@ header h1 {
     padding: 10px 15px;
     margin: 0 5px 20px;
     font-weight: 700;
+    background-color: rgb(44, 240, 240);
 }
 
 @media (max-width: 500px) {
