@@ -48,6 +48,7 @@ console.log(document.querySelector('button[id=clear]').style.color = 'white')
 console.log(document.querySelector('#filter').style.backgroundColor = 'rgb(188 216 195)')
 */
 
+/*
 query selector all
 const ited = document.querySelectorAll('li')
 console.log(ited)
@@ -64,4 +65,26 @@ conarr.forEach((items) => items.style.color = 'green');
 
 console.log(Array.isArray(conarr))
 console.log(Array.isArray(arr))
+*/
+//
+const part = document.querySelector('ul');
+for (const a of part.children) {
+    console.log(a.innerText)
+}
+//
+part.children[2].innerText = 'coffee';
+part.firstElementChild.innerText = "Grapes"
+part.lastElementChild.innerText = "Tea"
 
+//getting parent from child 
+const child = document.querySelector("li");
+console.log(child.innerText)
+child.parentElement.style.border = `1px solid #ff233f`
+child.parentElement.style.paddingTop = `20px`
+child.parentElement.style.paddingLeft = `20px`
+// sibling relation
+const childTwo = document.querySelector("li:nth-child(2)");
+childTwo.nextElementSibling.style.color = "yellow"
+childTwo.previousElementSibling.style.color = "orange"
+childTwo.nextElementSibling.nextElementSibling.style.color = 'red'
+console.log(childTwo)
