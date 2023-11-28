@@ -66,6 +66,8 @@ conarr.forEach((items) => items.style.color = 'green');
 console.log(Array.isArray(conarr))
 console.log(Array.isArray(arr))
 */
+/*
+
 //
 const part = document.querySelector('ul');
 for (const a of part.children) {
@@ -88,3 +90,23 @@ childTwo.nextElementSibling.style.color = "yellow"
 childTwo.previousElementSibling.style.color = "orange"
 childTwo.nextElementSibling.nextElementSibling.style.color = 'red'
 console.log(childTwo)
+
+*/
+
+const part = document.querySelector('ul');
+part.setAttribute('class', 'paren');
+//dom node relationship
+const par = document.querySelector('ul');
+console.log(par.childNodes)
+console.log(par.children)
+
+
+const output = par.childNodes[1];
+
+output.style.border = '1px solid blue'
+console.log(output)
+
+const seconditem = document.querySelector('li:nth-child(2)')
+const ou = seconditem.childNodes[0]
+seconditem.style.color = 'green'
+console.log(ou)
