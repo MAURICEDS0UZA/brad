@@ -10,7 +10,7 @@
 // out = document.getElementById('item-form').setAttribute('class', 'item-list');
 // console.log(out)
 
-
+/*
 // get change content 
 tite = document.querySelector('div >header>h1')
 tite.setAttribute('id', 'app-title')
@@ -46,7 +46,22 @@ console.log(document.querySelector('button[type=submit]').style.backgroundColor 
 console.log(document.querySelector('button[id=clear]').style.backgroundColor = '#954bd6')
 console.log(document.querySelector('button[id=clear]').style.color = 'white')
 console.log(document.querySelector('#filter').style.backgroundColor = 'rgb(188 216 195)')
+*/
 
+query selector all
+const ited = document.querySelectorAll('li')
+console.log(ited)
+ited.forEach((items) => items.style.color = 'red')
 
+const clearitem = document.getElementById('clear')
+console.log(clearitem)
+clearitem.style.color = 'green';
 
+const arr = document.getElementsByClassName('items')
+const conarr = Array.from(arr);
+console.log(conarr)
+conarr.forEach((items) => items.style.color = 'green');
+
+console.log(Array.isArray(conarr))
+console.log(Array.isArray(arr))
 
