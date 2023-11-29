@@ -198,7 +198,7 @@ mylist('Jam')
 //     tagf.insertAdjacentHTML("afterend", "<p>clear again</p>")
 // }
 // inserthtml()
-
+/*
 const ele = document.querySelector('li:nth-child(1)');
 // new element
 const itemNEW = document.createElement('li');
@@ -214,3 +214,22 @@ itemNEW.insertAdjacentText("afterbegin", "cashew")
 ele.parentNode.insertBefore(itemNEW, ele.nextSibling)
 console.log(ele.parentNode)
 console.log(itemNEW)
+*/
+
+//replace element
+const add = document.querySelector('button[type=submit]')
+console.log(add)
+
+const newAdd = document.createElement('button')
+newAdd.setAttribute('class', 'btn')
+newAdd.type = 'submit'
+newAdd.innerText = "selected items"
+console.log(newAdd)
+
+// //option1
+// add.replaceWith(newAdd)
+
+//option2
+add.outerHTML = `<button class="remove-item btn-link text-red">
+<i class="fa-solid fa-xmark"></i>selected-items
+</button>`
