@@ -185,16 +185,32 @@ function createIcon(classes) {
 mylist('Butter')
 mylist('Jam')
 
-function insertText() {
-    const ele = document.querySelector("li:first-child");
-    const h2 = document.createElement("h2")
-    h2.innerText = 'juice';
-    ele.insertAdjacentElement('beforeend', h2)
-    console.log(ele)
-}
-insertText()
-function inserthtml() {
-    const tagf = document.querySelector("#clear");
-    tagf.insertAdjacentHTML("afterend", "<p>clear again</p>")
-}
-inserthtml()
+// function insertText() {
+//     const ele = document.querySelector("li:first-child");
+//     const h2 = document.createElement("h2")
+//     h2.innerText = 'juice';
+//     ele.insertAdjacentElement('beforeend', h2)
+//     console.log(ele)
+// }
+// insertText()
+// function inserthtml() {
+//     const tagf = document.querySelector("#clear");
+//     tagf.insertAdjacentHTML("afterend", "<p>clear again</p>")
+// }
+// inserthtml()
+
+const ele = document.querySelector('li:nth-child(1)');
+// new element
+const itemNEW = document.createElement('li');
+const btun = document.createElement('button');
+const ioc = document.createElement('i');
+ioc.setAttribute("id", "fa-solid fa-xmark")
+ioc.innerText = '+'
+btun.insertAdjacentElement('afterbegin', ioc)
+itemNEW.insertAdjacentElement("afterbegin", btun);
+btun.className = "remove-item btn-link text-red";
+itemNEW.insertAdjacentText("afterbegin", "cashew")
+// itemNEW.insertBefore(btun, itemNEW)
+ele.parentNode.insertBefore(itemNEW, ele.nextSibling)
+console.log(ele.parentNode)
+console.log(itemNEW)
