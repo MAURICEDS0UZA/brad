@@ -216,6 +216,7 @@ console.log(ele.parentNode)
 console.log(itemNEW)
 */
 
+/*
 //replace element
 const add = document.querySelector('button[type=submit]')
 console.log(add)
@@ -233,3 +234,24 @@ console.log(newAdd)
 add.outerHTML = `<button class="remove-item btn-link text-red">
 <i class="fa-solid fa-xmark"></i>selected-items
 </button>`
+*/
+
+// //remove element
+// const li = document.querySelector(`li:nth-child(2)`)
+// li.remove()
+
+// const ul = document.querySelector('ul');
+// const li = document.querySelector(`li:nth-child(4)`)
+// ul.removeChild(li)
+function deletal(index) {
+
+    const li = document.querySelectorAll(`li`)[index - 1]
+    console.log(li)
+    li.remove()
+}
+// deletal(1)
+
+const delete1 = (items) => {
+    document.querySelectorAll('li')[items - 1].remove()
+}
+delete1(1)
