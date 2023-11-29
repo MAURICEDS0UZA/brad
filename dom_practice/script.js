@@ -93,12 +93,32 @@ console.log(childTwo)
 
 */
 
-const part = document.querySelector('ul');
-part.setAttribute('class', 'paren');
-//dom node relationship
-const par = document.querySelector('ul');
-console.log(par.childNodes)
-console.log(par.children)
+// const part = document.querySelector('ul');
+// part.setAttribute('class', 'paren');
+// //dom node relationship
+// const par = document.querySelector('ul');
+// console.log(par.childNodes)
+// console.log(par.children)
+
+
+
+//create and append element
+const dive = document.createElement('div');
+console.log(dive)
+dive.className = 'my-element';
+dive.id = 'my-element'
+dive.setAttribute('title', `my-element`)
+dive.innerHTML = '<p>hello</p>'
+const text = document.createTextNode('world')
+dive.append(text)
+
+
+document.body.append(dive)
+const asd = document.querySelectorAll('.my-element >p');
+asd.innerText = 'welcome';
+dive.append(asd.innerText)
+console.log(asd)
+
 
 
 const output = par.childNodes[1];
