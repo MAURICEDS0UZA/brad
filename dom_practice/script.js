@@ -132,7 +132,8 @@ console.log(asd)
 // console.log(ou)
 
 
-/*create element and appendchild*/
+// /*create element and appendchild*/
+/*
 const myItems = document.createElement('li');
 myItems.innerHTML = `Eggs
 <button class="remove-item btn-link text-red" >
@@ -151,6 +152,35 @@ myNewItems.appendChild(text)
 myNewItems.appendChild(btn)
 btn.appendChild(icon)
 console.log(myNewItems);
-
 document.querySelector('ul').appendChild(myNewItems)
+*/
 
+function mylist(items) {
+    const myNewItems = document.createElement('li');
+    const text = document.createTextNode(items);
+
+    const button = createButton("remove-item btn-link text-red");
+
+    myNewItems.appendChild(text)
+    myNewItems.appendChild(button)
+
+    console.log(myNewItems);
+
+    document.querySelector('ul').appendChild(myNewItems)
+}
+
+function createButton(classes) {
+    const btn = document.createElement('button');
+    btn.className = classes;
+    const icon = createIcon("fa-solid fa-xmark")
+    btn.appendChild(icon)
+    return btn;
+}
+
+function createIcon(classes) {
+    const icon = document.createElement('i');
+    icon.className = classes;
+    return icon;
+}
+mylist('Butter')
+mylist('Jam')
