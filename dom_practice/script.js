@@ -184,3 +184,17 @@ function createIcon(classes) {
 }
 mylist('Butter')
 mylist('Jam')
+
+function insertText() {
+    const ele = document.querySelector("li:first-child");
+    const h2 = document.createElement("h2")
+    h2.innerText = 'juice';
+    ele.insertAdjacentElement('beforeend', h2)
+    console.log(ele)
+}
+insertText()
+function inserthtml() {
+    const tagf = document.querySelector("#clear");
+    tagf.insertAdjacentHTML("afterend", "<p>clear again</p>")
+}
+inserthtml()
