@@ -101,7 +101,7 @@ console.log(childTwo)
 // console.log(par.children)
 
 
-
+/*
 //create and append element
 const dive = document.createElement('div');
 console.log(dive)
@@ -118,15 +118,39 @@ const asd = document.querySelectorAll('.my-element >p');
 asd.innerText = 'welcome';
 dive.append(asd.innerText)
 console.log(asd)
+*/
 
 
+// const output = par.childNodes[1];
 
-const output = par.childNodes[1];
+// output.style.border = '1px solid blue'
+// console.log(output)
 
-output.style.border = '1px solid blue'
-console.log(output)
+// const seconditem = document.querySelector('li:nth-child(2)')
+// const ou = seconditem.childNodes[0]
+// seconditem.style.color = 'green'
+// console.log(ou)
 
-const seconditem = document.querySelector('li:nth-child(2)')
-const ou = seconditem.childNodes[0]
-seconditem.style.color = 'green'
-console.log(ou)
+
+/*create element and appendchild*/
+const myItems = document.createElement('li');
+myItems.innerHTML = `Eggs
+<button class="remove-item btn-link text-red" >
+    <i class="fa-solid fa-xmark"></i >
+</button>`
+document.querySelector('ul').appendChild(myItems)
+console.log(myItems)
+
+const myNewItems = document.createElement('li');
+const text = document.createTextNode("cheese");
+const btn = document.createElement('button');
+btn.className = "remove-item btn-link text-red";
+const icon = document.createElement('i');
+icon.className = "fa-solid fa-xmark";
+myNewItems.appendChild(text)
+myNewItems.appendChild(btn)
+btn.appendChild(icon)
+console.log(myNewItems);
+
+document.querySelector('ul').appendChild(myNewItems)
+
