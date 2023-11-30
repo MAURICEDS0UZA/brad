@@ -235,7 +235,7 @@ add.outerHTML = `<button class="remove-item btn-link text-red">
 <i class="fa-solid fa-xmark"></i>selected-items
 </button>`
 */
-
+/*
 // //remove element
 // const li = document.querySelector(`li:nth-child(2)`)
 // li.remove()
@@ -255,3 +255,8 @@ const delete1 = (items) => {
     document.querySelectorAll('li')[items - 1].remove()
 }
 delete1(1)
+*/
+
+const itemsBody = document.querySelector('.btn-link').classList
+itemsBody.remove('text-red')
+console.log(itemsBody)
