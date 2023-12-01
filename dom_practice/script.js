@@ -256,7 +256,25 @@ const delete1 = (items) => {
 }
 delete1(1)
 */
-
+/*
 const itemsBody = document.querySelector('.btn-link').classList
 itemsBody.remove('text-red')
-console.log(itemsBody)
+console.log(itemsBody) */
+
+function onclear() {
+    const itemsList = document.querySelector("ul");
+    // itemsList.remove()
+    const itemsChild = itemsList.querySelectorAll('li')
+    itemsChild.forEach((ite => ite.remove()));
+    console.log(itemsChild)
+}
+
+const clearBtn = document.querySelector("#clear");
+console.log(clearBtn)
+clearBtn.addEventListener('click', onclear)
+
+//remove event listner
+// setTimeout(() => {
+//     clearBtn.removeEventListener('click', onclear)
+
+// }, 5000);
