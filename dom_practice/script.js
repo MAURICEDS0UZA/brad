@@ -260,7 +260,7 @@ delete1(1)
 const itemsBody = document.querySelector('.btn-link').classList
 itemsBody.remove('text-red')
 console.log(itemsBody) */
-
+/*
 function onclear() {
     const itemsList = document.querySelector("ul");
     // itemsList.remove()
@@ -278,3 +278,34 @@ clearBtn.addEventListener('click', onclear)
 //     clearBtn.removeEventListener('click', onclear)
 
 // }, 5000);
+*/
+
+// const itemslist = document.querySelector('ul');
+// const items = itemslist.children
+// console.log(items)
+function doubleClickBg() {
+    document.querySelector('body').style.backgroundColor = 'green'
+};
+function ClickBg() {
+    document.querySelector('body').style.backgroundColor = 'blue'
+};
+const clearBtn = document.querySelector("#clear");
+clearBtn.addEventListener('click', ClickBg);
+clearBtn.addEventListener('dblclick', doubleClickBg);
+
+//right click
+const context = () => { document.querySelector('body').style.backgroundColor = 'purple' }
+const cleaBtn = document.querySelector("ul>li");
+cleaBtn.addEventListener('contextmenu', context)
+console.log(cleaBtn.innerHTML)
+//mouse up and down
+clearBtn.addEventListener('mouseup', () => console.log('hello'))
+clearBtn.addEventListener('mousedown', () => console.log('hello heee'))
+//wheel
+clearBtn.addEventListener('wheel', () => console.log('wheelo'))
+
+//drag
+const itemsSecond = document.querySelector("li:nth-child(2)");
+itemsSecond.addEventListener('dragstart', () => console.log('start drag'))
+itemsSecond.addEventListener('dragend', () => console.log('end drag'))
+itemsSecond.addEventListener('drag', () => console.log('only drag'))
