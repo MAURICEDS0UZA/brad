@@ -309,3 +309,14 @@ const itemsSecond = document.querySelector("li:nth-child(2)");
 itemsSecond.addEventListener('dragstart', () => console.log('start drag'))
 itemsSecond.addEventListener('dragend', () => console.log('end drag'))
 itemsSecond.addEventListener('drag', () => console.log('only drag'))
+
+/*
+// itemsSecond.addEventListener('click', (e) => console.log(e.clientX, e.clientY));
+// itemsSecond.addEventListener('click', (e) => console.log(e.offsetX, e.offSetY));
+itemsSecond.addEventListener('click', (e) => console.log(e.pageX, e.pageY));
+console.log(clearBtn);
+const additem = document.querySelector(`#item-form .form-control button[type=submit] `);
+console.log(additem)
+additem.addEventListener(`drag`, (e) => { document.querySelector('#clear').textContent = `${e.clientX}` })
+additem.addEventListener(`dragend`, (e) => { document.querySelector('#clear').textContent = `${e.preventDefault}` })
+*/
