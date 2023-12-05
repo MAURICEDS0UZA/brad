@@ -283,6 +283,7 @@ clearBtn.addEventListener('click', onclear)
 // const itemslist = document.querySelector('ul');
 // const items = itemslist.children
 // console.log(items)
+/*
 function doubleClickBg() {
     document.querySelector('body').style.backgroundColor = 'green'
 };
@@ -310,7 +311,7 @@ itemsSecond.addEventListener('dragstart', () => console.log('start drag'))
 itemsSecond.addEventListener('dragend', () => console.log('end drag'))
 itemsSecond.addEventListener('drag', () => console.log('only drag'))
 
-/*
+
 // itemsSecond.addEventListener('click', (e) => console.log(e.clientX, e.clientY));
 // itemsSecond.addEventListener('click', (e) => console.log(e.offsetX, e.offSetY));
 itemsSecond.addEventListener('click', (e) => console.log(e.pageX, e.pageY));
@@ -320,3 +321,9 @@ console.log(additem)
 additem.addEventListener(`drag`, (e) => { document.querySelector('#clear').textContent = `${e.clientX}` })
 additem.addEventListener(`dragend`, (e) => { document.querySelector('#clear').textContent = `${e.preventDefault}` })
 */
+
+const inputPlace = document.querySelector(`input[type=text]`)
+console.log(inputPlace)
+inputPlace.addEventListener("keypress", (e) => console.log('keyboard key'))
+// inputPlace.addEventListener("keyup", (e) => console.log('keyboard keyup'))
+// inputPlace.addEventListener("keydown", (e) => console.log('keyboard keydown'))
