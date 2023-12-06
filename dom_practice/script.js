@@ -11,7 +11,7 @@
 // console.log(out)
 
 /*
-// get change content 
+// get change content
 tite = document.querySelector('div >header>h1')
 tite.setAttribute('id', 'app-title')
 // console.log(document.getElementById('app-title').id = 'newg')
@@ -78,7 +78,7 @@ part.children[2].innerText = 'coffee';
 part.firstElementChild.innerText = "Grapes"
 part.lastElementChild.innerText = "Tea"
 
-//getting parent from child 
+//getting parent from child
 const child = document.querySelector("li");
 console.log(child.innerText)
 child.parentElement.style.border = `1px solid #ff233f`
@@ -154,7 +154,7 @@ btn.appendChild(icon)
 console.log(myNewItems);
 document.querySelector('ul').appendChild(myNewItems)
 */
-
+/*
 function mylist(items) {
     const myNewItems = document.createElement('li');
     const text = document.createTextNode(items);
@@ -184,7 +184,7 @@ function createIcon(classes) {
 }
 mylist('Butter')
 mylist('Jam')
-
+*/
 // function insertText() {
 //     const ele = document.querySelector("li:first-child");
 //     const h2 = document.createElement("h2")
@@ -321,9 +321,40 @@ console.log(additem)
 additem.addEventListener(`drag`, (e) => { document.querySelector('#clear').textContent = `${e.clientX}` })
 additem.addEventListener(`dragend`, (e) => { document.querySelector('#clear').textContent = `${e.preventDefault}` })
 */
-
+/*
 const inputPlace = document.querySelector(`input[type=text]`)
 console.log(inputPlace)
 inputPlace.addEventListener("keypress", (e) => console.log('keyboard key'))
 // inputPlace.addEventListener("keyup", (e) => console.log('keyboard keyup'))
 // inputPlace.addEventListener("keydown", (e) => console.log('keyboard keydown'))
+*/
+
+const itemInput = document.getElementById('item-input');
+const priorityInput = document.getElementById('priority-input');
+const checkbox = document.getElementById('checkbox');
+const heading = document.querySelector('h1');
+const clearr = document.querySelector('#clear')
+
+// input, change, focus and blur events
+itemInput.addEventListener('input', (e) => {
+    heading.textContent = e.target.value;
+});
+priorityInput.addEventListener('input', (e) => {
+    heading.textContent = e.target.value;
+})
+priorityInput.addEventListener('change', (e) => {
+    clearr.textContent = e.target.value;
+})
+itemInput.addEventListener('focus', (e) => {
+    console.log('Input is focused');
+    itemInput.style.outlineColor = 'green';
+    itemInput.style.outlineStyle = 'solid';
+    itemInput.style.outlineWidth = '2px';
+
+})
+itemInput.addEventListener('blur', e => { itemInput.style.outline = "none" });
+checkbox.addEventListener('input', e => {
+    const checkresult = e.target.checked;
+    console.log(checkresult ? "Its true" : "Not checked ");
+
+})
