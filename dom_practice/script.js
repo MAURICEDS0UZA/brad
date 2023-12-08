@@ -359,6 +359,7 @@ checkbox.addEventListener('input', e => {
 
 })
 */
+/*
 const inputText = document.querySelector('#item-form');
 
 inputText.addEventListener('submit', (e) => {
@@ -388,3 +389,19 @@ inputText.addEventListener('submit', (e) => {
     //     console.log(itr)
     // }
 })
+*/
+
+// bubbling
+const btn = document.querySelector(`button[type=submit]`);
+btn.addEventListener("click", (e) => {
+    alert(`buttom clicked`);
+    e.stopPropagation()
+})
+const divBtn = btn.parentElement.addEventListener("click", (e) => {
+    alert(`div clicked`);
+});
+
+const form = document.querySelector("#item-form");
+form.addEventListener("click", (e) => {
+    alert(`form clicked`);
+});
