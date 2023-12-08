@@ -70,10 +70,9 @@ console.log(Array.isArray(arr))
 
 //
 const part = document.querySelector('ul');
-for (const a of part.children) {
+for (const a of part.children)
     console.log(a.innerText)
-}
-//
+}//
 part.children[2].innerText = 'coffee';
 part.firstElementChild.innerText = "Grapes"
 part.lastElementChild.innerText = "Tea"
@@ -390,7 +389,7 @@ inputText.addEventListener('submit', (e) => {
     // }
 })
 */
-
+/*
 // bubbling
 const btn = document.querySelector(`button[type=submit]`);
 btn.addEventListener("click", (e) => {
@@ -405,3 +404,12 @@ const form = document.querySelector("#item-form");
 form.addEventListener("click", (e) => {
     alert(`form clicked`);
 });
+*/
+const item = document.querySelector('ul');
+
+item.addEventListener("click", (e) => {
+    console.log(e.target)
+    e.target.style.color = `green`
+});
+
+
