@@ -405,6 +405,7 @@ form.addEventListener("click", (e) => {
     alert(`form clicked`);
 });
 */
+/*
 const item = document.querySelector('ul');
 
 item.addEventListener("click", (e) => {
@@ -412,4 +413,17 @@ item.addEventListener("click", (e) => {
     e.target.style.color = `green`
 });
 
+*/
+// window.addEventListener('resize', () => { document.querySelector('h1').innerText = `${window.scrollX} x${window.scrollY} ` })
+window.addEventListener('scroll', () => {
+    console.log(`${window.scrollX} ${window.scrollY}`)
+    if (window.scrollY > 70) {
+        document.body.style.backgroundColor = 'green'
+        document.body.style.color = 'white'
+    }
+    else {
+        document.body.style.backgroundColor = 'white'
+        document.body.style.color = 'red'
+    }
+})
 
