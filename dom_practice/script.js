@@ -328,7 +328,7 @@ inputPlace.addEventListener("keypress", (e) => console.log('keyboard key'))
 // inputPlace.addEventListener("keyup", (e) => console.log('keyboard keyup'))
 // inputPlace.addEventListener("keydown", (e) => console.log('keyboard keydown'))
 */
-
+/*
 const itemInput = document.getElementById('item-input');
 const priorityInput = document.getElementById('priority-input');
 const checkbox = document.getElementById('checkbox');
@@ -357,4 +357,34 @@ checkbox.addEventListener('input', e => {
     const checkresult = e.target.checked;
     console.log(checkresult ? "Its true" : "Not checked ");
 
+})
+*/
+const inputText = document.querySelector('#item-form');
+
+inputText.addEventListener('submit', (e) => {
+    e.preventDefault();
+    // console.log(e.target);
+    const inputValue = document.querySelector('#item-input').value;
+    const priorityValue = document.querySelector('#priority-input').value;
+    if (inputValue === "" && priorityValue === 0) {
+        alert("enter value");
+        return
+    }
+    else {
+        console.log(inputValue, priorityValue);
+    }
+
+})
+
+//form_object
+inputText.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const formData = new FormData(inputText);
+    const item = formData.get("item")
+    console.log(item);
+    // const entry = formData.entries()
+    // console.log(formData);
+    // for (let itr of entry) {
+    //     console.log(itr)
+    // }
 })
