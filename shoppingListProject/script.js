@@ -1,6 +1,8 @@
 const itemForm = document.querySelector('#item-form');
 const itemInput = document.querySelector('#item-input');
 const itemList = document.querySelector('#item-list');
+const clearBtn = document.querySelector('#clear');
+
 
 function additem(e) {
     e.preventDefault();
@@ -36,4 +38,24 @@ function additem(e) {
     itemList.appendChild(li)
 }
 
+// remove-items
+function removeItem(e) {
+    if (e.target.parentElement.classList.contains('remove-item')) {
+        e.target.parentElement.parentElement.remove();
+        console.log(`clicked!`);
+    }
+}
+
+// clear all items
+function clearAllItem(e) {
+    console.log(itemList.firstChild)
+    // itemList.innerHTML = " ";
+    while (itemList.firstChild) {
+        itemList.removeChild(itemList.firstChild);
+    }
+
+}
+
 itemForm.addEventListener('submit', additem)
+itemList.addEventListener('click', removeItem)
+clearBtn.addEventListener('click', clearAllItem)
