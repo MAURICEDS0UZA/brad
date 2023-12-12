@@ -2,7 +2,10 @@ const itemForm = document.querySelector('#item-form');
 const itemInput = document.querySelector('#item-input');
 const itemList = document.querySelector('#item-list');
 const clearBtn = document.querySelector('#clear');
-const filterItem = document.querySelector(`.filter`)
+const filterItem = document.querySelector(`.filter`);
+const formBtn = itemForm.querySelector('button');
+let isEditMode = false;
+
 function displayItems() {
     const itemFromStorage = getItemfromLocalStorage()
 
@@ -85,8 +88,21 @@ function onClickremove(e) {
     if (e.target.parentElement.classList.contains('remove-item')) {
         removeItem(e.target.parentElement.parentElement)
     }
+    else {
+        setItemToEdit(e.target)
+    }
 };
 
+// editing list
+function setItemToEdit(item) {
+    isEditMode = true;
+    itemList.querySelectorAll('li').forEach((item) => item.classList.remove('edit-mode'));
+    item.classList.add("edit-mode");
+    formBtn.innerHTML = '<i class="fa-solid fa-pen"></i> Update Item';
+    formBtn.style.color = "green";
+    itemInput.value = item.textContent;
+    console.log(item)
+}
 // remove-items
 function removeItem(item) {
     if (confirm("Are you sure?")) {
@@ -99,13 +115,11 @@ function removeItem(item) {
 }
 
 function removeItemFromLocal(item) {
-    console.log(item)
     let itemfromlocalstorage = getItemfromLocalStorage();
-    console.log(itemfromlocalstorage);
     itemfromlocalstorage = itemfromlocalstorage.filter((i) => i !== item);
-    console.log(itemfromlocalstorage);
     localStorage.setItem("items", JSON.stringify(itemfromlocalstorage));
 }
+
 // clear all items
 function clearAllItem(e) {
     // itemList.innerHTML = " ";
