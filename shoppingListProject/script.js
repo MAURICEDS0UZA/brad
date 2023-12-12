@@ -58,7 +58,25 @@ function clearAllItem(e) {
     clearUI()
 }
 
-// clear filter when items are not avaiable.
+// Filter the list
+function filterlist(e) {
+    const items = itemList.querySelectorAll(`li`);
+    const text = e.target.value.toLowerCase();
+
+
+    items.forEach((item) => {
+        const itemName = item.firstChild.textContent.toLowerCase();
+
+        if (itemName.indexOf(text) != -1) {
+            item.style.display = 'flex';
+        }
+        else {
+            item.style.display = 'none';
+        }
+    })
+}
+
+// remove clearall filter when items are not avaiable.
 function clearUI() {
     const itemli = itemList.querySelectorAll(`li`)
     // check items are present in list
@@ -76,4 +94,5 @@ function clearUI() {
 itemForm.addEventListener('submit', additem);
 itemList.addEventListener('click', removeItem);
 clearBtn.addEventListener('click', clearAllItem);
-clearUI()
+filterItem.addEventListener('input', filterlist);
+clearUI();
