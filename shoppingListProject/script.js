@@ -25,6 +25,16 @@ function onAddItemsSubmit(e) {
         return;
     }
 
+    // check for edit mode
+    if (isEditMode) {
+        const itemToEdit = itemList.querySelector('.edit-mode');
+
+        removeItemFromLocal(itemToEdit.textContent);
+        itemToEdit.classList.remove('edit-mode');
+        itemToEdit.remove();
+        isEditMode = false;
+    }
+
     itemInput.value = '';
     addItemToDom(newItem);
     addItemToLocalStorage(newItem);
@@ -93,15 +103,15 @@ function onClickremove(e) {
     }
 };
 
+
 // editing list
 function setItemToEdit(item) {
     isEditMode = true;
     itemList.querySelectorAll('li').forEach((item) => item.classList.remove('edit-mode'));
     item.classList.add("edit-mode");
     formBtn.innerHTML = '<i class="fa-solid fa-pen"></i> Update Item';
-    formBtn.style.color = "green";
+    formBtn.style.color = "orange";
     itemInput.value = item.textContent;
-    console.log(item)
 }
 // remove-items
 function removeItem(item) {
@@ -152,7 +162,9 @@ function filterlist(e) {
 
 // remove clearall filter when items are not avaiable.
 function clearUI() {
-    const itemli = itemList.querySelectorAll(`li`)
+    itemInput.value = "";
+    const itemli = itemList.querySelectorAll(`li`);
+
     // check items are present in list
     if (itemli.length === 0) {
         clearBtn.style.display = 'none';
@@ -162,6 +174,8 @@ function clearUI() {
         clearBtn.style.display = 'block';
         filterItem.style.display = 'block';
     }
+    formBtn.innerHTML = '<i class="fa-solid fa-plus"></i> Add Item';
+    formBtn.style.color = '#fff';
 }
 
 function init() {
