@@ -34,6 +34,12 @@ function onAddItemsSubmit(e) {
         itemToEdit.remove();
         isEditMode = false;
     }
+    else {
+        if (checkIfItemExit(newItem)) {
+            alert("Item already exists!")
+            return;
+        }
+    }
 
     itemInput.value = '';
     addItemToDom(newItem);
@@ -103,6 +109,11 @@ function onClickremove(e) {
     }
 };
 
+// checking for duplicate
+function checkIfItemExit(item) {
+    const itemfromlocalstorage = getItemfromLocalStorage();
+    return itemfromlocalstorage.includes(item);
+}
 
 // editing list
 function setItemToEdit(item) {
