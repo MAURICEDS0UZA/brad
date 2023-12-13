@@ -99,7 +99,8 @@ header h1 {
     text-align: left;
 }
 
-header p {
+header p,
+footer p {
     font-size: 90%;
     margin: 0;
     color: #fff;
