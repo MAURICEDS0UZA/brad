@@ -82,6 +82,15 @@ header h1 {
     font-size: 165%;
 }
 
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: normal;
+    font-size: 165%;
+    border-radius: 10px;
+}
+
 header p {
     font-size: 90%;
     margin: 0;
@@ -481,11 +490,11 @@ header p {
 section {
     background-color: #fff;
     color: var(--primary-color);
-    margin: 10px;
-    padding: 20px;
+    margin: 20px 0px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 
 .btn {
     display: block;
@@ -500,6 +509,16 @@ section {
     animation: first 1.5s;
     animation-fill-mode: forwards;
     opacity: 0;
+}
+
+.project {
+    padding: 20px;
+}
+
+.highlight {
+    background-color: var(--primary-color);
+    color: var(--white);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 footer {
