@@ -487,6 +487,21 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.btn {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    padding: 5px 15px;
+    border: 2px solid #d3dee7;
+    margin-bottom: 10px;
+    color: var(--white);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    animation: first 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
 footer {
     text-align: center;
     font-size: 85%;
