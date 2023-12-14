@@ -15,7 +15,7 @@ let intervalId;
 
 function startInterval() {
     if (!intervalId) {
-        intervalId = setInterval(changeBgColorRandom, 3000);
+        intervalId = setInterval(changeBgColorRandom, 1000);
     }
 }
 
@@ -39,7 +39,8 @@ function changeBgColorRandom() {
 }
 
 function stopInterval() {
-    clearInterval(intervalId)
+    clearInterval(intervalId);
+    intervalId = 0;
 }
 
 document.querySelector('#start').addEventListener('click', startInterval);
