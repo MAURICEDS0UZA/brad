@@ -22,8 +22,8 @@ h3,
 h4,
 h5,
 h6,
-p {
-    margin-top: 0;
+{
+margin-top: 0;
 }
 
 p {
@@ -55,7 +55,7 @@ a {
     max-width: 960px;
     margin: 0 auto;
     overflow: hidden;
-    padding-bottom: 10px;
+    padding: 10px 10px;
 }
 
 @media screen and (min-width: 1280px) {
@@ -215,6 +215,7 @@ footer p {
 }
 
 .box-a {
+    text-align: center;
     background-color: #e7eff5;
     padding: 20px 20px 20px 20px;
     border: 2px solid #d3dee7;
@@ -280,6 +281,7 @@ footer p {
 @media screen and (max-width: 767px) {
     .box-a {
         margin-bottom: 15px;
+        padding: 0px;
     }
 }
 
@@ -520,6 +522,12 @@ section {
     animation-fill-mode: forwards;
     opacity: 0;
 }
+
+.btn:hover {
+    background-color: #FFF;
+    color: #2c465a;
+}
+
 
 .project {
     padding: 20px;
