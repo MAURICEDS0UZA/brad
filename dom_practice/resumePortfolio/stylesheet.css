@@ -21,9 +21,8 @@ h2,
 h3,
 h4,
 h5,
-h6,
-{
-margin-top: 0;
+h6 {
+    margin-top: 0;
 }
 
 p {
@@ -38,6 +37,7 @@ img {
 
 a {
     text-decoration: none;
+    color: var(--white)
 }
 
 /* Main Column Typography */
@@ -523,9 +523,9 @@ section {
     opacity: 0;
 }
 
-.btn:hover {
-    background-color: #FFF;
-    color: #2c465a;
+.btn :hover {
+
+    color: #07bbf7;
 }
 
 
