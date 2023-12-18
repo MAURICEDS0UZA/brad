@@ -528,6 +528,9 @@ section {
     color: #07bbf7;
 }
 
+.text {
+    color: var(--primary-color);
+}
 
 .project {
     padding: 20px;
