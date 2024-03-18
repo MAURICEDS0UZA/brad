@@ -51,7 +51,6 @@
 // // // // // output1=value1.toString();
 // // // // // console.log(output1,typeof output1)
 
-
 // // // // // /*type of coercion*/
 // // // // // let x;
 // // // // // x=2+2+'3';
@@ -73,10 +72,8 @@
 // // // // // // tag = out.replace('name',"mic")
 // // // // // tag = out.split(' ')
 
-
 // // // // // console.log(name1)
 // // // // // console.log(tag,typeof tag);
-
 
 // // // // // /*CHALLENGE FROM COURSE*/
 // // // // //  const myString ="developer";
@@ -105,7 +102,6 @@
 // // // // // x=Math.max(2,4,5 )
 // // // // // x=Math.floor(1+Math.random() *10);
 // // // // // console.log(x)
-
 
 // // // // // // ?challenge
 // // // // // let x =Math.floor(Math.random()*100);
@@ -166,10 +162,7 @@
 // // // // // // const x = Array.isArray(num)
 // // // // // const x = Array.from('umsadsf')
 
-
 // // // // // console.log(x,num)
-
-
 
 // // // // const person ={
 // // // //     name1:'maurice',
@@ -225,7 +218,6 @@
 // // const { nest,age,...rest }=toDo
 // // console.log( age,rest)
 
-
 // // json (javascript object notation)
 
 // // const x={ name:'may',age:'23'};
@@ -235,7 +227,6 @@
 // // console.log(y)
 // // const z=JSON.parse(y)
 // // console.log(z)
-
 
 // // const library=[
 // //    {title:"sd",
@@ -262,7 +253,6 @@
 // // //     }
 // // // ];
 
-
 // // // // Step2
 // // // library[0].status.read='true';
 // // // library[1].status.read='true';
@@ -271,7 +261,6 @@
 // // //  const { title:book,author:writer} =library[0];
 // // // console.log(book,writer);
 // // // console.log(library)
-
 
 // // // // step3
 // // // const injson = JSON.stringify(library);
@@ -288,7 +277,6 @@
 // //     result= `my mane is ${su}`
 // // }
 // // console.log(dsa())
-
 
 // // //object as params
 // // let su = {
@@ -349,7 +337,6 @@
 // }
 // func();
 
-
 // // function expression
 
 // const r = function (nam) {
@@ -363,7 +350,6 @@
 //     result= nam;
 // };
 
-
 // //arrow function
 
 // function add(a, b) {
@@ -376,8 +362,6 @@
 //     result= a + b;
 // };
 
-
-
 // console.log(sub(12, 19));
 // const doun = (d, s) => {
 //     result= d + s;
@@ -387,7 +371,6 @@
 // //implict
 // //const fund = (ru, fu) => ru - fu;
 // // console.log(fund(4, 8))
-
 
 // const fund = () => ({ name: 'mau', id: 12 });
 // console.log();
@@ -504,13 +487,11 @@
 
 // }
 
-
 // // loop through an array
 // const arer = ['nas', 'sd', 'wer'];
 // for (let i = 0; i < arer.length; i++) {
 //     console.log(arer[i]);
 // }
-
 
 // //break
 // for (let i = 0; i <= 10; i++) {
@@ -541,8 +522,6 @@
 //     i++;
 
 // }
-
-
 
 // // nesting while loop
 // let i = 1;
@@ -598,7 +577,7 @@ for (let i = 1; i <= 100; i++) {
 // }
 
 /* loop over map
-*/
+ */
 // const maoi = new Map();
 // maoi.set(name, "maurice");
 // maoi.set("naage", 323);
@@ -606,9 +585,8 @@ for (let i = 1; i <= 100; i++) {
 //     console.log(key, val)
 // }
 
-
 /* for in loop
-*/
+ */
 // const onbg = {
 //     nmae: 'mas',
 //     age: 23,
@@ -620,7 +598,6 @@ for (let i = 1; i <= 100; i++) {
 //     console.log(onbg[key])
 
 // // }
-
 
 // // loop over oarray using array for each
 
@@ -641,7 +618,6 @@ for (let i = 1; i <= 100; i++) {
 // const number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 // const evennum = console.log(number.filter(item => item % 2 === 0));
 
-
 // const companies = [
 //     { name: 'Company One', category: 'Finance', start: 1981, end: 2004 },
 //     { name: 'Company Two', category: 'Retail', start: 1992, end: 2008 },
@@ -659,7 +635,6 @@ for (let i = 1; i <= 100; i++) {
 // // const y = companies.filter((company) => company.start >= 1980 && company.end <= 1990);
 // const y = companies.filter((company) => company.start - company.end >= -10);
 // console.log(y)
-
 
 // /*array map*/
 // const companies = [
@@ -701,7 +676,6 @@ for (let i = 1; i <= 100; i++) {
 // let c = 0;
 // const sd = number.map((items) => c += items);
 // console.log(sd.filter((items) => items % 2 === 0).reduce((pr, cr) => pr + cr, 0))
-
 
 // // Challenge 1
 // const people = [
@@ -769,3 +743,28 @@ for (let i = 1; i <= 100; i++) {
 //     return items[0].toUpperCase() + items.slice(1, items.length)
 // })
 // console.log(ere)
+
+// Geolocation get current location
+function curLocation(loc) {
+  console.log({
+    latitude: loc.coords.latitude,
+    longitude: loc.coords.longitude,
+    accuracy: loc.coords.accuracy,
+  });
+}
+
+function CurError(error) {
+  console.log(error);
+}
+
+const CurOption = {
+  enableHighAccuracy: true,
+  timeout: 5000,
+  maximumAge: 0,
+};
+
+window.navigator.geolocation.getCurrentPosition(
+  curLocation,
+  CurError,
+  CurOption
+);
