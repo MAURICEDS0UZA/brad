@@ -744,27 +744,67 @@ for (let i = 1; i <= 100; i++) {
 // })
 // console.log(ere)
 
-// Geolocation get current location
-function curLocation(loc) {
-  console.log({
-    latitude: loc.coords.latitude,
-    longitude: loc.coords.longitude,
-    accuracy: loc.coords.accuracy,
-  });
-}
+// // Geolocation get current location
+// function curLocation(loc) {
+//   console.log({
+//     latitude: loc.coords.latitude,
+//     longitude: loc.coords.longitude,
+//     accuracy: loc.coords.accuracy,
+//   });
+// }
 
-function CurError(error) {
-  console.log(error);
-}
+// function CurError(error) {
+//   console.log(error);
+// }
 
-const CurOption = {
-  enableHighAccuracy: true,
-  timeout: 5000,
-  maximumAge: 0,
-};
+// const CurOption = {
+//   enableHighAccuracy: true,
+//   timeout: 5000,
+//   maximumAge: 0,
+// };
 
-window.navigator.geolocation.getCurrentPosition(
-  curLocation,
-  CurError,
-  CurOption
-);
+// window.navigator.geolocation.getCurrentPosition(
+//   curLocation,
+//   CurError,
+//   CurOption
+// );
+
+// geolocation.watchPosition And clearwatch.
+// const target = {
+//   latitude: 0,
+//   longitude: 0,
+// };
+
+// function curLocation(loc) {
+//   const cordinates = {
+//     latitude: loc.coords.latitude,
+//     longitude: loc.coords.longitude,
+//     accuracy: loc.coords.accuracy,
+//   };
+
+//   console.log(cordinates);
+//   if (
+//     target.latitude === cordinates.latitude &&
+//     target.longitude === cordinates.longitude
+//   ) {
+//     console.log("Reached your destination!");
+//     window.navigator.geolocation.clearWatch(id);
+//   }
+//   console.log("Go ahead, you haven't reached yet");
+// }
+
+// function CurError(error) {
+//   console.log(error);
+// }
+
+// const CurOption = {
+//   enableHighAccuracy: true,
+//   timeout: 5000,
+//   maximumAge: 0,
+// };
+
+// let id = window.navigator.geolocation.watchPosition(
+//   curLocation,
+//   CurError,
+//   CurOption
+// );
