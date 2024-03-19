@@ -820,7 +820,6 @@ ctx.strokeRect(10, 10, 80, 60);
 // draw rectangle filled
 ctx.fillStyle = "green";
 ctx.fillRect(40, 30, 30, 30);
-
 // draw line
 ctx.strokeStyle = "black";
 ctx.beginPath();
@@ -829,4 +828,10 @@ ctx.lineTo(50, 35);
 ctx.lineWidth = 2;
 ctx.stroke();
 
+// Draw circle
+ctx.strokeStyle = "orange";
+ctx.beginPath();
+ctx.arc(200, 75, 50, 0, 1.5 * Math.PI);
+ctx.closePath();
+ctx.stroke();
 console.log(myCanvas, ctx);
