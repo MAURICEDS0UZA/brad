@@ -813,25 +813,33 @@ const myCanvas = document.querySelector("#myCanvas");
 const ctx = myCanvas.getContext("2d");
 ctx.strokeStyle = "red";
 
-// Draw rectangle using stroke
+// // Draw rectangle using stroke
+// ctx.lineWidth = 1;
+// ctx.strokeRect(10, 10, 80, 60);
+
+// // draw rectangle filled
+// ctx.fillStyle = "green";
+// ctx.fillRect(40, 30, 30, 30);
+// // draw line
+// ctx.strokeStyle = "black";
+// ctx.beginPath();
+// ctx.moveTo(10, 12);
+// ctx.lineTo(50, 35);
+// ctx.lineWidth = 2;
+// ctx.stroke();
+
+// // Draw circle
+// ctx.strokeStyle = "orange";
+// ctx.beginPath();
+// ctx.arc(200, 75, 50, 0, 1.5 * Math.PI);
+// ctx.closePath();
+// ctx.stroke();
+// console.log(myCanvas, ctx);
+
+// write text into canvas
+// ctx.lineWidth = 0.5;
+ctx.font = "30px Verdana";
+ctx.fillText("Hello Everyone", 40, 100);
+ctx.font = "10px Verdana";
 ctx.lineWidth = 1;
-ctx.strokeRect(10, 10, 80, 60);
-
-// draw rectangle filled
-ctx.fillStyle = "green";
-ctx.fillRect(40, 30, 30, 30);
-// draw line
-ctx.strokeStyle = "black";
-ctx.beginPath();
-ctx.moveTo(10, 12);
-ctx.lineTo(50, 35);
-ctx.lineWidth = 2;
-ctx.stroke();
-
-// Draw circle
-ctx.strokeStyle = "orange";
-ctx.beginPath();
-ctx.arc(200, 75, 50, 0, 1.5 * Math.PI);
-ctx.closePath();
-ctx.stroke();
-console.log(myCanvas, ctx);
+ctx.strokeText("@2024", 40, 130);
