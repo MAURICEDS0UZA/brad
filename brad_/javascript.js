@@ -808,3 +808,25 @@ for (let i = 1; i <= 100; i++) {
 //   CurError,
 //   CurOption
 // );
+
+const myCanvas = document.querySelector("#myCanvas");
+const ctx = myCanvas.getContext("2d");
+ctx.strokeStyle = "red";
+
+// Draw rectangle using stroke
+ctx.lineWidth = 1;
+ctx.strokeRect(10, 10, 80, 60);
+
+// draw rectangle filled
+ctx.fillStyle = "green";
+ctx.fillRect(40, 30, 30, 30);
+
+// draw line
+ctx.strokeStyle = "black";
+ctx.beginPath();
+ctx.moveTo(10, 12);
+ctx.lineTo(50, 35);
+ctx.lineWidth = 2;
+ctx.stroke();
+
+console.log(myCanvas, ctx);
