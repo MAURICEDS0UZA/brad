@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <style>
+  <!-- <style>
     #myCanvas {
       border: 1px solid black;
     }
-  </style>
+  </style> -->
   <body>
-    <canvas id="myCanvas" width="300" height="200"></canvas>
+    <!-- <canvas id="myCanvas" width="300" height="200"></canvas> -->
+
+    <audio src="summer.mp3"></audio>
+    <button id="play">Play</button>
+    <button id="pause">Pause</button>
+    <button id="stop">Stop</button>
+    <button id="mute">Mute</button>
+    <div id="current-time"></div>
+    <input type="range" max="1" min="0" step="0.1" id="volume" />
   </body>
-  <script src="javascript.js"></script>
+  <script src="javascript.js" defer></script>
 </html>
