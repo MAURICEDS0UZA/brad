@@ -809,9 +809,9 @@ for (let i = 1; i <= 100; i++) {
 //   CurOption
 // );
 
-const myCanvas = document.querySelector("#myCanvas");
-const ctx = myCanvas.getContext("2d");
-ctx.strokeStyle = "red";
+// const myCanvas = document.querySelector("#myCanvas");
+// const ctx = myCanvas.getContext("2d");
+// ctx.strokeStyle = "red";
 
 // // Draw rectangle using stroke
 // ctx.lineWidth = 1;
@@ -838,8 +838,46 @@ ctx.strokeStyle = "red";
 
 // write text into canvas
 // ctx.lineWidth = 0.5;
-ctx.font = "30px Verdana";
-ctx.fillText("Hello Everyone", 40, 100);
-ctx.font = "10px Verdana";
-ctx.lineWidth = 1;
-ctx.strokeText("@2024", 40, 130);
+// ctx.font = "30px Verdana";
+// ctx.fillText("Hello Everyone", 40, 100);
+// ctx.font = "10px Verdana";
+// ctx.lineWidth = 1;
+// ctx.strokeText("@2024", 40, 130);
+const audio = document.querySelector("audio");
+const play = document.getElementById("play");
+const pause = document.getElementById("pause");
+const stop = document.getElementById("stop");
+const curTime = document.getElementById("current-time");
+const vol = document.getElementById("volume");
+const mute = document.getElementById("mute");
+
+play.addEventListener("click", (e) => {
+  audio.play();
+  console.log("play button");
+});
+
+pause.addEventListener("click", (e) => {
+  audio.pause();
+  console.log("Pause button");
+});
+
+stop.addEventListener("click", (e) => {
+  audio.pause();
+  audio.currentTime = 0;
+});
+
+mute.addEventListener("click", (e) => {
+  const value = audio.muted ? false : true;
+  audio.muted = value;
+});
+
+vol.addEventListener("change", (e) => {
+  audio.volume = vol.value;
+  console.log(audio.volume);
+});
+
+audio.addEventListener("timeupdate", (e) => {
+  curTime.innerText = Math.round(audio.currentTime);
+});
+
+console.log(vol);
